@@ -5,50 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3ce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/4d2fb223aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="h-inner">
-            <h1><a href="#"><img src="./images/logo.png" alt="3ce logo"></a></h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">고객지원</a>
-                    </li>
-                    <li>
-                        <a href="#">3CE</a>
-                    </li>
-                    <li>
-                        <a href="#">STYLENANDA</a>
-                    </li>
-                    <li>
-                        <a href="#">ABOUT 3CE</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="icon-area">
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-solid fa-globe"></i></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="3ce logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">고객지원</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">3CE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STYLENANDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT 3CE</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-        </div>
+          </nav>
     </header>
     <!-- header fin -->
 
     <div class="main">
-        <div class="main-section">
-            <img src="./images/main-top.jpg" alt="3ce shine reflector">
-            <div class="main-txt">
-                <div class="main-txt-t">
-                    <h2>Shine, Be Mine <br> 3CE SHINE REFLECTOR</h2>
-                    <img src="images/logo.png" alt="3ce logo">
-                </div>
-                <div class="main-txt-b">
-                    <p>모든 각도의 빛을 내 입술에</p>
-                    <a href="#">View More</a>
-                </div>
+        <div class="main-section row">
+            <video src="./video/main.mp4" class="col" autoplay muted loop></video>
+            <div class="main-txt col">
+                <img src="images/logo.png" alt="3ce logo">
+                <h2>Shine, Be Mine <br> 3CE SHINE REFLECTOR</h2>
+                <p>모든 각도의 빛을 내 입술에</p>
+                <a href="#">View More</a>                              
             </div>
         </div>
         <!-- main 상단 -->
@@ -57,38 +61,34 @@
                 <div class="product-title">3CE</div>
                 <div class="product-title">Best Products</div>
             </div>
-            <ul>
-                <li>1
-                    <span>LIP</span>
-                </li>
-                <li>2
-                    <span>EYE</span>
-                </li>
-                <li>3
-                    <span>FACE</span>
-                </li>
-                <li>4
-                    <span>CHEEK</span>
-                </li>
-                <li>5
-                    <span>ACC</span>
-                </li>
-            </ul>
-            <div class="slider">
-
+            <div>
+                <ul class="product-list row">
+                    <li class="col-lg-6 col-sm-12">
+                        <a href="#">
+                            <img src="./images/p-lip-1.png" alt="3CE 블러 매트 립스틱">
+                            <p>3CE BLUR MATTE LIPSTICK</p>
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-sm-12">
+                        <a href="#">
+                            <img src="./images/p-lip-2.png" alt="3CE 샤인 리플렉터">
+                            <p> 3CE SHINE REFLECTOR</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="main-others container">
+        <div class="main-others">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <img src="./images/others-1.jpg" alt="best itmes">
                     <p>3CE Best Item</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <img src="./images/others-2.jpg" alt="2023 fw collection">
                     <p>2023 FW Collection</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <img src="./images/others-3.jpg" alt="best review">
                     <p>Best Review</p>
                 </div>
@@ -102,52 +102,52 @@
             <ul>
                 <li>
                     <div>
-                        <h3></h3>
-                        <a href="tel:0502-707-8888"></a>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <h3>CUSTOMER CENTER</h3>
+                        <a href="tel:0502-707-8888">0502-707-8888</a>
+                        <p>평일 09:30 - 17:30</p>
+                        <p>점심 12:30 - 13:30</p>
+                        <p>휴무 토, 일, 공휴일</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3></h3>
-                        <a href="#"></a>
-                        <p></p>
-                        <address></address>
-                        <p></p>
+                        <h3>DELIVERY</h3>
+                        <a href="#">배송조회</a>
+                        <p>반품주소</p>
+                        <address>경기도 이천시 대월면 대월로 932번길 94 A동</address>
+                        <p>반드시 로젠택배 이용</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3></h3>
+                        <h3>STORE</h3>
                         <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">플래그십</a></li>
+                            <li><a href="#">백화점</a></li>
+                            <li><a href="#">면세점</a></li>
+                            <li><a href="#">올리브영</a></li>
+                            <li><a href="#">해외</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3></h3>
+                        <h3>HELP</h3>
                         <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">고객 지원</a></li>
+                            <li><a href="#">쇼핑 가이드</a></li>
+                            <li><a href="#">제휴 문의</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3></h3>
+                        <h3>NOTICE</h3>
                         <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">회원 공지</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">회사 소개</a></li>
+                            <li><a href="#">해외 배송 안내</a></li>
                         </ul>
                     </div>
                 </li>
@@ -156,35 +156,43 @@
         <div class="footer-m">
             <ul class="f-icon-area">
                 <li>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 </li>
             </ul>
         </div>
         <div class="footer-b">
-            <div></div>
-            <p></p>
+            <div class="info-1">
+                <span>대표이사. 신지은</span>
+                <span>회사명. ㈜난다.</span>
+                <span>사업자 등록번호. 130-86-24632</span>
+            </div>
+            <div class="info-2">
+                <strong><a href="#">개인정보처리방침</a></strong>
+                <span><a href="#">영상정보처리기기운영&middot;관리방침</a></span>
+                <span><a href="#">이용약관</a></span>
+            </div>
             <div class="copyright">
-                <span></span>
+                <span>대한민국</span>
                 <select>
-                    <option></option>
-                    <option></option>
+                    <option>한국어</option>
+                    <option>English</option>
                 </select>
-                <span></span>
+                <span>&copy; 2022 Stylenanda</span>
             </div>
         </div>
     </footer>
     <!-- footer fin -->
 
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
